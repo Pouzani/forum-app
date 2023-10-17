@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'zelijSignature': "url('./assets/images/zelijS.png')",
+      },
+      colors: {
+        khder: '#1F4C24',
+      },
+      screens: {
+        'xs': '480px',
+      }
+    },
   },
   plugins: [],
 }
