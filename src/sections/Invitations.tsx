@@ -5,8 +5,8 @@ import Invitation2 from "../assets/images/Invitation2.png";
 const Invitations = () => {
 	return (
 		<section>
-			<div className="container mx-auto sm:px-6 lg:px-8 bg-zelijSignature bg-cover bg-center mt-2 columns-3 flex items-center justify-center lg:p-80 md:p-70 sm:p-36 xs:p-16">
-				<div className="lg:w-1/2 md:w-full flex lg:flex-row flex-col lg:px-0 px-12">
+			<div className="container mx-auto sm:px-6 lg:px-8 bg-zelijSignature bg-cover bg-center mt-2 columns-3 flex items-center justify-center lg:p-80 md:p-70 sm:p-70 xs:p-16">
+				<div className="lg:w-1/2 md:w-full flex lg:flex-row flex-col lg:px-0 px-12 lg:gap-0 gap-10">
 					<div className="basis-1/2">
 						<h1 className="text-sm font-bold mb-1">ForumGENIEntreprises</h1>
 						<p className="text-justify font-light w-11/12 leading-5">

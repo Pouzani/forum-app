@@ -1,25 +1,32 @@
 import { Navbar, NextUIProvider } from "@nextui-org/react";
 import "./App.css";
-import Home from "./sections/Home";
+import Heading from "./sections/Heading";
 import NavbarComponent from "./components/Navbar";
 import Example from "./components/Navbar";
 import NavbarForum from "./components/Navbar";
 import CommitteeWord from "./sections/CommitteeWord";
 import Argumentaire from "./sections/Argumentaire";
 import Invitations from "./sections/Invitations";
+import Presentation from "./sections/Presentation";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import Root from "./Root";
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <Root />,
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
+		],
+	},
+]);
 
 function App() {
-	return (
-		<>
-			<NavbarForum />
-      <div className="flex flex-col gap-20">
-			<Home />
-      <CommitteeWord />
-      <Argumentaire />
-      <Invitations />
-      </div>
-		</>
-	);
+	return <RouterProvider router={router} />;
 }
 
 export default App;

@@ -2,7 +2,7 @@ import React from "react";
 import ForumLogo from "../assets/images/ForumLogoVertical.png";
 import ForumLaptop from "../assets/images/ForumLaptop.png";
 
-const Home = () => {
+const Heading = () => {
 	return (
 		<section className="container mx-auto sm:px-6 lg:px-8 flex lg:flex-row flex-col items-center lg:gap-3 gap-6">
 			<img src={ForumLogo} alt="Forum Laptop" className="w-72" />
@@ -26,4 +26,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default Heading;

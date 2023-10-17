@@ -3,7 +3,7 @@ import React from "react";
 const Argumentaire = () => {
 	return (
 		<section>
-			<div className="container mx-auto sm:px-6 lg:px-8 text-gray-700">
+			<div className="container mx-auto sm:px-6 lg:px-8 text-kherwani">
 				<h1 className="text-3xl font-bold w-96 tracking-widest mb-8 px-12">
 					ARGUMENTAIRE DU THÈME
 				</h1>

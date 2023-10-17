@@ -11,6 +11,8 @@ export default {
       },
       colors: {
         khder: '#1F4C24',
+        kherwani: "#3A4A3E",
+        gris: "#222222"
       },
       screens: {
         'xs': '480px',
