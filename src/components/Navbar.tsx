@@ -1,65 +1,49 @@
-import React from "react";
-import {
-	Navbar,
-	NavbarBrand,
-	NavbarContent,
-	NavbarItem,
-	Link,
-	Button,
-	NavbarMenu,
-	NavbarMenuItem,
-	NavbarMenuToggle,
-} from "@nextui-org/react";
+/* This example requires Tailwind CSS v2.0+ */
 
+import ForumLogo from "../assets/images/Forum-logo-horizental.png";
 
-export default function NavbarComponent() {
-	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+const navigation = [
+	{ name: "About", href: "#" },
+	{ name: "Pricing", href: "#" },
+	{ name: "Docs", href: "#" },
+];
 
-	const menuItems = [
-		"Profile",
-		"Dashboard",
-		"Activity",
-		"Analytics",
-		"System",
-		"Deployments",
-		"My Settings",
-		"Team Settings",
-		"Help & Feedback",
-		"Log Out",
-	];
-
+export default function NavbarForum() {
 	return (
-		<Navbar isBordered>
-			<NavbarBrand>
-				<p className="font-bold text-inherit">ACME</p>
-			</NavbarBrand>
-			<NavbarContent className="hidden sm:flex gap-4" justify="center">
-				<NavbarItem>
-					<Link color="foreground" href="#">
-						Features
-					</Link>
-				</NavbarItem>
-				<NavbarItem isActive>
-					<Link href="#" aria-current="page">
-						Customers
-					</Link>
-				</NavbarItem>
-				<NavbarItem>
-					<Link color="foreground" href="#">
-						Integrations
-					</Link>
-				</NavbarItem>
-			</NavbarContent>
-			<NavbarContent justify="end">
-				<NavbarItem className="hidden lg:flex">
-					<Link href="#">Login</Link>
-				</NavbarItem>
-				<NavbarItem>
-					<Button as={Link} color="primary" href="#" variant="flat">
-						Sign Up
-					</Button>
-				</NavbarItem>
-			</NavbarContent>
-		</Navbar>
+		<header className="">
+			<nav
+				className="lg:max-w-6xl md:max-w-2xl max-w-md mx-auto px-4 sm:px-6 lg:px-8"
+				aria-label="Top"
+			>
+				<div className="w-full py-6 items-center justify-between border-b lg:border-none hidden lg:flex">
+					<div className="lg:w-40">
+						<img src={ForumLogo} alt="Forum Logo" />
+					</div>
+					{navigation.map((link) => (
+						<a
+							key={link.name}
+							href={link.href}
+							className="text-base font-medium hover:text-indigo-50"
+						>
+							{link.name}
+						</a>
+					))}
+				</div>
+				<div className="py-4 flex flex-wrap justify-between items-center space-x-6 lg:hidden">
+        <div className="w-28">
+						<img src={ForumLogo} alt="Forum Logo" />
+					</div>
+					{navigation.map((link) => (
+						<a
+							key={link.name}
+							href={link.href}
+							className="text-base font-medium hover:text-indigo-50"
+						>
+							{link.name}
+						</a>
+					))}
+				</div>
+			</nav>
+		</header>
 	);
 }
