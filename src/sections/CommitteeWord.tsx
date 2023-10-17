@@ -3,10 +3,10 @@ import React from 'react';
 function CommitteeWord(){
 
     return(
-        <div>
+        <section className='flex flex-col gap-20'>
             <div className="container mx-auto sm:px-6 lg:px-8 bg-black text-white">
-                <h1 className='text-xl font-bold pt-14 pr-12 pl-12'>MOT DU COMITE <br /> ORGANISATEUR</h1>
-                <p className="text-justify text-xs pt-14 pb-20 pr-12 pl-12">Les élèves ingénieurs des trois prestigieuses écoles, l'INSEA (Institut National de Statistique et d'Économie Appliquée), l'ENSIAS
+                <h1 className='text-2xl font-bold pt-14 px-12'>MOT DU COMITE <br /> ORGANISATEUR</h1>
+                <p className="text-justify text-base pt-14 pb-20 px-12">Les élèves ingénieurs des trois prestigieuses écoles, l'INSEA (Institut National de Statistique et d'Économie Appliquée), l'ENSIAS
                 (Ecole Nationale Supérieure d'Informatique et d'Analyses des Systèmes) et l'INPT (Institut National des Postes et
                 Télécommunications) ont le plaisir de vous annoncer la tenue de la 19ème édition du Forum GENI Entreprises. Cet événement de
                 grande envergure organisé à l'échelle nationale vise à mettre en relation les élèves ingénieurs en quête de leurs futurs emplois
@@ -20,17 +20,17 @@ function CommitteeWord(){
                 l'INSEA, et nous espérons vous y accueillir nombreux afin de profiter de cette occasion unique de renforcer vos compétences, de
                 découvrir de nouvelles opportunités de carrière et de réseauter avec les professionnels du monde entier.</p>
             </div>
-            <div className="container mx-auto sm:px-6 lg:px-8 bg-zelijSignature bg-cover bg-center mt-2 columns-3 flex flex-row lg:p-56 md:p-70 sm:p-36 xs:p-16">
+            <div className="container mx-auto sm:px-6 lg:px-8 bg-zelijSignature bg-cover bg-center mt-2 columns-3 flex flex-row lg:p-80 md:p-70 sm:p-36 xs:p-16">
 
                 <div className="basis-1/3"></div>
                 <div className="basis-1/3">
-                    <h1 className='font-bold lg:text-3xl md:text-sm sm:text-xs text-khder'>NOUVEL ESSOR DU DÉVELOPPEMENT SOCIO-ÉCONOMIQUE AU MAROC</h1><br />
-                    <h3 className='lg:text-xl md:text-xs sm:text-xs text-khder'>Réformes et stratégies dans un monde complexe et incertain</h3>
+                    <h1 className='font-bold text-3xl text-khder'>NOUVEL ESSOR DU DÉVELOPPEMENT SOCIO-ÉCONOMIQUE AU MAROC</h1><br />
+                    <h3 className='text-xl text-khder'>Réformes et stratégies dans un monde complexe et incertain</h3>
                 </div>
                 <div className="basis-1/3"></div>
 
             </div>
-        </div>
+        </section>
     );
 }
 

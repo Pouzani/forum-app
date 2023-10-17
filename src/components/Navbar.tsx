@@ -10,12 +10,12 @@ const navigation = [
 
 export default function NavbarForum() {
 	return (
-		<header className="">
+		<header className="sticky top-0 bg-white/95 backdrop-blur-sm">
 			<nav
 				className="lg:max-w-6xl md:max-w-2xl max-w-md mx-auto px-4 sm:px-6 lg:px-8"
 				aria-label="Top"
 			>
-				<div className="w-full py-6 items-center justify-between border-b lg:border-none hidden lg:flex">
+				<div className="w-full lg:py-1 items-center justify-between border-b lg:border-none hidden lg:flex">
 					<div className="lg:w-40">
 						<img src={ForumLogo} alt="Forum Logo" />
 					</div>
