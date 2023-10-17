@@ -11,6 +11,7 @@ import {
 	NavbarMenuToggle,
 } from "@nextui-org/react";
 
+
 export default function NavbarComponent() {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
