@@ -1,4 +1,4 @@
-import React from "react";
+
 import ForumLogo from "../assets/images/ForumLogoVertical.png";
 import ForumLaptop from "../assets/images/ForumLaptop.png";
 
@@ -6,7 +6,7 @@ const Heading = () => {
 	return (
 		<section className="container mx-auto sm:px-6 lg:px-8 flex lg:flex-row flex-col items-center lg:gap-3 gap-6">
 			<img src={ForumLogo} alt="Forum Laptop" className="w-72" />
-			<img src={ForumLaptop} alt="Forum Laptop" width={700} />
+			<img src={ForumLaptop} alt="Forum Laptop" className="lg:w-1/2 w-3/4" />
 			<div className="text-start px-5">
 				<h1 className="text-5xl font-extrabold">CV TECH</h1>
 				<br></br>

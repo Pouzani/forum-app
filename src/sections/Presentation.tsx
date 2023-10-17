@@ -1,4 +1,3 @@
-import React from "react";
 import Presentation1 from "../assets/images/Presentation1.png";
 import Presentation2 from "../assets/images/Presentation2.png";
 
@@ -25,7 +24,7 @@ const Presentation = () => {
 							malgré́ notre motivation, cet évènement ne peut voir
 							le jour sans votre collaboration.
 						</p>
-						<img src={Presentation1} />
+						<img src={Presentation1} className="hidden lg:block" />
 					</div>
 					<div className="basis-1/2">
 						<img src={Presentation2} />

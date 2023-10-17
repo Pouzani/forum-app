@@ -1,4 +1,4 @@
-import React from "react";
+
 import Heading from "../sections/Heading";
 import CommitteeWord from "../sections/CommitteeWord";
 import Argumentaire from "../sections/Argumentaire";

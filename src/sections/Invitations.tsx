@@ -1,4 +1,4 @@
-import React from "react";
+
 import Invitation1 from "../assets/images/Invitation1.png";
 import Invitation2 from "../assets/images/Invitation2.png";
 
